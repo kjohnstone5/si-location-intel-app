@@ -1,0 +1,41 @@
+.LoaderButton {
+  background: #215BA6 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  opacity: 1;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  margin-top: 75px;
+  margin-bottom: 45px;
+
+}
+
+.LoaderButton:disabled{
+  background-color: #EBEBEB;
+  color: #C8C8C8;
+  border: none;
+}
+
+.LoaderButton:enabled:active, .LoaderButton:enabled:hover, .LoaderButton:enabled:focus{
+  background-color: #0B2F7B;
+  box-shadow: none;
+  border: none;
+}
+
+.LoaderButton .spinning {
+    margin-right: 7px;
+    top: 2px;
+    animation: spin 1s infinite linear;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: scale(1) rotate(0deg);
+    }
+    to {
+      transform: scale(1) rotate(360deg);
+    }
+  }
+
+  

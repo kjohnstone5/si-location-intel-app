@@ -1,0 +1,3 @@
+export const API_BASE_URL = process.env.REACT_APP_LOCATION_INTEL_URL;
+export const ACCESS_TOKEN_NAME = process.env.REACT_APP_LOCATION_INTEL_API_KEY;
+export const ENVIRONMENT = process.env.REACT_APP_ENVIRONMENT;

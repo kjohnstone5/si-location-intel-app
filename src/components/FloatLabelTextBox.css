@@ -1,0 +1,88 @@
+.floating-label{
+    position: relative;
+}
+
+    .floating-label input, .floating-label select {
+        font-size: 14px;
+        font-family: Roboto-Regular;
+        padding: 10px 16px;
+        min-height: 40px;
+        border: solid 2px #9e9e9e;
+        border-radius: 4px;
+        background: transparent 0% 0% no-repeat padding-box;
+        width: 100%;
+        box-sizing: border-box;
+        transition: all .3s linear;
+        color: #2e2e2e;
+        font-weight: 400;
+    }
+
+        .floating-label input:focus, .floating-label select:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+
+        .floating-label input:not(:placeholder-shown), .floating-label select:not(:placeholder-shown) {
+            background: #ffffff;
+        }
+
+        .floating-label input:-internal-autofill-selected, .floating-label select:-internal-autofill-selected,
+        .floating-label input:-webkit-autofill, .floating-label select:-webkit-autofill {
+            background: #ffffff;
+        }
+
+        input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px #ffffff inset;
+ box-shadow: 0 0 0 30px #ffffff inset;
+}
+
+        .floating-label input:not(:placeholder-shown) + label, .floating-label select:not(:placeholder-shown) + label {
+            opacity: 1;
+            background-color: #ffffff;
+            font-size: 10px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            color: #9e9e9e;
+            padding: 0 2px;
+        }
+
+    .floating-label label {
+        font-size: 12.5px;
+        color: #000;
+        opacity: 0;
+        font-weight: 400;
+        position: absolute;
+        top: calc(50% - 7px);
+        transition: all .3s ease;
+        width: fit-content;
+    }
+
+.floating-label input:not(:placeholder-shown) + label, .floating-label select:not(:placeholder-shown) + label {
+    transform: translate(15px, -18px);
+}
+
+.floating-label .error,
+.floating-label .error input:-internal-autofill-selected, .floating-label .error select:-internal-autofill-selected,
+.floating-label .error input:-webkit-autofill, .floating-label .error select:-webkit-autofill {
+    border-color: #F5222D !important;
+    background-color: #FFEAEA !important;
+    -webkit-box-shadow: 0 0 0 30px #FFEAEA inset;
+ box-shadow: 0 0 0 30px #FFEAEA inset;
+}
+
+.error.form-text {
+    font-size: 12px;
+    font-family: Roboto-Regular;
+    color: #F5222D;
+    padding-left: 16px;
+    margin-top: 0;
+    margin-bottom: -17px;
+    height: 17px;
+}
