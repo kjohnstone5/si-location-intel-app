@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import {  BrowserRouter as Router } from 'react-router-dom';
+import { AppContext } from "./libs/contextLib";
+import MainRoutes from "./routes/MainRoutes";
+import "./App.css";
+import OmniFooter from "./components/OmniFooter.js";
 
 function App() {
+  const [isAuthenticated, userHasAuthenticated] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App container py-3">
+        <AppContext.Provider value={{ isAuthenticated, userHasAuthenticated }}>
+          <Router>
+            <MainRoutes />
+          </Router>
+        </AppContext.Provider>
+      </div>
+      <OmniFooter />
+    </>
   );
 }
-
 export default App;

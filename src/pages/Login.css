@@ -1,0 +1,59 @@
+@media all and (min-width: 480px) {   
+    .Login-Container {
+      background-color: #06122A;
+        width: 100%;
+        display: table;
+        height: 590px;
+    }
+    .Login-Container-Row {
+        display: table-row;
+    }
+    .Login {      
+        max-width: 50%;  
+        display: table-cell;  
+        padding-top: 75px;
+        vertical-align: top;    
+      }
+
+      .Login-Header{
+          color: white;
+          width: 420px;
+          font: normal normal normal 35px/42px Helvetica;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        margin: auto;
+        margin-bottom: 32px;
+      }
+    
+      .Login-Form{
+        width: 420px;
+        margin: auto;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 0px 7px #00000029;
+        border-radius: 4px;
+        font-family: Roboto-Regular;
+        font-size: 14px;
+        padding: 40px 20px 40px 20px;
+      }
+      .Login form {
+        margin: 0 auto;
+        max-width: 320px;
+        
+      }
+      .Login .form-group{
+        margin-bottom: 27px;
+      }
+      .Login .form-control{
+        font-family: Arial;
+        font-size: 14px;
+      }
+
+      
+      .Login-Image{
+          display: table-cell;
+          width: 50%;
+          overflow: hidden;
+      }
+      
+  }
